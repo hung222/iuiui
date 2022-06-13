@@ -1,0 +1,10 @@
+{% if chunha %}
+ <ul>
+   {% for chunha in chunha%}
+     <li>{{ chunha.name}}</li>
+   {% endfor %}
+ </ul>
+{% else %}
+<h1>chunhachunhachunha</h1>
+ <p>Không có chunha nào trong CSDL</p>
+{% endif %}
