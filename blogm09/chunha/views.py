@@ -3,9 +3,9 @@ from django.template import loader
 from .models import chunha
 
 def index(request):
-  chunha = chunha.objects.filter.values()
+  mydata = chunha.objects.filter.values()
   template = loader.get_template('index.html')
   context = {
-    'mychunha': mychunha,
+    'mychunha': mydata,
   }
   return HttpResponse(template.render(context, request))
