@@ -1,6 +1,6 @@
 from django.http import HttpResponse
 from django.template import loader
-from .models import chunhas
+from .models import chunha
 
 def index(request):
   chunha = chunha.objects.filter(firstname='Emil').values()
