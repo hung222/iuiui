@@ -3,7 +3,7 @@ from django.template import loader
 from .models import chunha
 
 def index(request):
-  mychunhas = chunha.objects.all().values()
+  mychunhas = mychunha.objects.all().values()
   template = loader.get_template('index.html')
   context = {
     'mychunha': mychunha,
